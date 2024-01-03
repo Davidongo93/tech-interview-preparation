@@ -7,13 +7,14 @@ function FindNeedle (haystack, needle) {
         count ++
         console.log(i);
         console.log(j);
-        
+       } else {
+          count = -1;
+        }
+        console.log(count);
       }
     }
+    return count;
     
-    
-  }
-
-}
+  };
 
 module.exports = FindNeedle
