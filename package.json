@@ -4,7 +4,7 @@
   "description": "tech-interview-preparation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha Tests/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   },
   "standard": {
     "env": "mocha"
+  },
+  "dependencies": {
+    "chai": "^5.0.0"
   }
 }
