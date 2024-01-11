@@ -1,29 +1,15 @@
 {
-  "name": "tech-interview-preparation",
+  "name": "henrytech",
   "version": "1.0.0",
-  "description": "tech-interview-preparation",
+  "description": "testing",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha Tests/**/*.js"
+    "test": "jest --collectCoverage=false",
+    "test:name": "jest --collectCoverage=false name"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soyHenry/tech-interview-preparation.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soyHenry/tech-interview-preparation/issues"
-  },
-  "homepage": "https://github.com/soyHenry/tech-interview-preparation#readme",
-  "devDependencies": {
-    "standard": "^16.0.4"
-  },
-  "standard": {
-    "env": "mocha"
-  },
+  "homepage": "https://github.com/soyHenry/Entrevistas-Tecnicas#readme",
   "dependencies": {
-    "chai": "^5.0.0"
+    "chai": "^4.2.0",
+    "jest": "^24.9.0"
   }
 }
