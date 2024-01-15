@@ -1,23 +1,18 @@
-function FindNeedle (haystack, needle) {
-  let index = 0;
+function FindNeedle(haystack, needle) {
+  let index = -1;
   for (let i = 0; i < haystack.length; i++) {
+    index = i;
     for (let j = 0; j < needle.length; j++) {
-      if (haystack[i]===needle[j]) {
-        if (haystack[i+1]===needle[j+1]) {
-          
-        index ++;
-        } else {
-          index = -1;
-          break;
-        }
-      } else {
-        continue;
+      if (haystack[i + j] !== needle[j]) {
+        index = -1;
+        break;
       }
-    };
-    
+    }
+    if (index !== -1) {
+      return index;
+    }
   }
   return index;
-
 }
-
-module.exports = FindNeedle
+//this aproximation has a complexity of O(n*m)
+module.exports = FindNeedle;
